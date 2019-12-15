@@ -1,8 +1,8 @@
-1b, 28, CTG, L, False
-1b, 29, CCA, P, False
-1b, 30, CGG, R, False
-1b, 31, TTG, L, False
-1b, 32, CCG, P, False
-1b, 58, CCA, P, False
-1b, 92, GCG, A, False
-1b, 93, TAC, Y, False
+1a, 28, CTG, L, False
+1a, 29, CCA, P, False
+1a, 30, CGG, R, False
+1a, 31, TTG, L, False
+1a, 32, CCG, P, False
+1a, 58, CCA, P, False
+1a, 92, GCG, A, False
+1a, 93, TAC, Y, False
