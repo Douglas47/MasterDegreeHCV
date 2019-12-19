@@ -6,8 +6,6 @@ import collections
 
 """ Global Variables"""
 
-
-
 Nucleotides = ["A", "T", "C" , "G"]
 
 
