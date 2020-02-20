@@ -72,3 +72,12 @@ codontable = {
     'TAC':'Y', 'TAT':'Y', 'TAA':'_', 'TAG':'_',
     'TGC':'C', 'TGT':'C', 'TGA':'_', 'TGG':'W',
     }
+
+
+""" POSITION LIST """
+
+positions_list = (28,29,30,31,32,54,92,93) 
+
+""" Nucleotide Nitrogen Base Group """
+
+Nucleotides_types = {"A":"Purina","G":"Purina","T":"Pirimidina","C":"Pirimidina"}

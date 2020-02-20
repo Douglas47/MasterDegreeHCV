@@ -2,8 +2,10 @@
 
 from Global_Variables import *
 
+""" FUNCTIONS """
 
-""" Functions """
+
+""" Intermediaries between two codons """
 
 def intermediaries(codon, rcodon):
    """ Generator of Intermediaries """
@@ -18,11 +20,6 @@ def intermediaries(codon, rcodon):
    codon_inter.append(rcodon[0] + codon[1] + rcodon[2])
    codon_inter.append(rcodon[:])
    return(codon_inter)                      
-
-
-""" Nucleotide Nitrogen Base Group """
-
-Nucleotides_types = {"A":"Purina","G":"Purina","T":"Pirimidina","C":"Pirimidina"}
 
 
 """ Compare Two Nucleotides """
@@ -61,5 +58,33 @@ def List_Info_Seqs(Data_Seq):
                 Frequencies[info_seq[1]] = 0
             Frequencies[info_seq[1]] += 1
             print("codon: %s AminoAcid: %s Resistance: %r" % (info_seq[1],info_seq[2],info_seq[3]))
+     
+""" Transforma um arquivo fasta em um dicionário """
+    
+def fasta_to_dict(file):
+    fasta_file = open(file)
+    output_dict = {}
+    for line in fasta_file:
+        line = line.replace("\n","")
+        if line.startswith(">"):
+            sequence = ""
+            name = line[1:]
+            name = name.split()
+            name = name[0]
+            """Acession Number"""
+        else:
+            sequence += line
+            """Sequence"""
+        output_dict[name] = sequence
+    return(output_dict)
+
+""" Returna um dicionário com as posições e os codons """
+
+def sequence_codons(sequence):
+    codons = {}
+    for position in positions_list:
+        codon = sequence[(position*3)-3:(position*3)]
+        codons[position] = codon
+    return(codons)
             
             
