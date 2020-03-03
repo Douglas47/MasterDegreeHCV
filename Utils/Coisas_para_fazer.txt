@@ -1,5 +1,0 @@
-1. Refazer o nome das variáveis, para tornar o código legível
-2. Adicionar mais comentários
-3. Gerar resultados
-	3.1 Selecionar modelo a ser aplicado
-	3.2 Fazer essa porra funcionar
