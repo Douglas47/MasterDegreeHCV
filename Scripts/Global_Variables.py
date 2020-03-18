@@ -37,21 +37,6 @@ codon_usage_g1 = dict(zip(list(codon_usage_table['Codon']), list(codon_usage_tab
 codon_usage_g3 = dict(zip(list(codon_usage_table['Codon']), list(codon_usage_table['HCV-G3'])))
 
 
-
-""" Resistance Associated Substitution to Direct-Acting Antivirals Agents"""
-         
-Resistance = collections.OrderedDict()
-Resistance[28] = ['T','V','A','S']
-Resistance[29] = ['S'],
-Resistance[30] = ['E','H','R','D','G','K','T','Q','P','S'], 
-Resistance[31] = ['M','I','V','F'],
-Resistance[32] = ['L'],
-Resistance[58] = ['D','S'],
-Resistance[92] = ['K'],
-Resistance[93] = ['H','N','C','S']
-
-
-
 """ GENETIC CODE """
 
 codontable = {
@@ -76,7 +61,7 @@ codontable = {
 
 """ POSITION LIST """
 
-positions_list = (28,29,30,31,32,54,92,93) 
+positions_list = (24,28,29,30,31,32,54,58,92,93) 
 
 """ Nucleotide Nitrogen Base Group """
 

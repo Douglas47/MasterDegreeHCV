@@ -1,3 +1,4 @@
+Genotype;Position;Drug;AminoAcid
 1a;24;DCV;R
 1a;24;LDV;R
 1a;28;DCV;V
@@ -43,7 +44,7 @@
 1b;31;VEL;M
 1b;31;DCV;F
 1b;31;EBR;F
-1b;31;DLDV;F
+1b;31;LDV;F
 1b;31;OMV;F
 1b;31;DCV;V
 1b;31;EBR;V

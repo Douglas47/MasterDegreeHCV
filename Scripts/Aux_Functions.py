@@ -78,7 +78,7 @@ def fasta_to_dict(file):
         output_dict[name] = sequence
     return(output_dict)
 
-""" Returna um dicionário com as posições e os codons """
+""" Retorna um dicionário com as posições e os codons """
 
 def sequence_codons(sequence):
     codons = {}
@@ -87,4 +87,16 @@ def sequence_codons(sequence):
         codons[position] = codon
     return(codons)
             
-            
+""" Retorna os codons de cada aminoácido """   
+
+def aa_to_codons(aa):
+    codons = []
+    for item in codontable.items(): 
+        if item[1] == aa: 
+           codons.append(item[0])
+    return codons
+
+
+def codons_row(row):
+    row["Codons"] = aa_to_codons(row['AminoAcid'])
+    return row
