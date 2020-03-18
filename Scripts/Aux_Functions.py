@@ -36,14 +36,17 @@ def nt_distance(nt_1,nt_2):
 """ Calculates Genetic Barrier """
 
 def genetic_barrier(codon_1,codon_2):
-    codon_1 = codon_1.upper()
-    codon_2 = codon_2.upper()
-    position = 0
-    valor = 0
-    for nt in codon_1:
-        valor += nt_distance(nt,codon_2[position])
-        position += 1
-    return valor
+    try:
+        codon_1 = codon_1.upper()
+        codon_2 = codon_2.upper()
+        position = 0
+        valor = 0
+        for nt in codon_1:
+            valor += nt_distance(nt,codon_2[position])
+            position += 1
+        return valor
+    except:
+        return None
      
     
 """ This function prints in a more organized way the informations about the sequences """

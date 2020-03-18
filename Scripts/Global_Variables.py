@@ -66,3 +66,9 @@ positions_list = (24,28,29,30,31,32,54,58,92,93)
 """ Nucleotide Nitrogen Base Group """
 
 Nucleotides_types = {"A":"Purina","G":"Purina","T":"Pirimidina","C":"Pirimidina"}
+
+
+Codon_Resistente_List = ['Codon_Resistente_01', 'Codon_Resistente_02', 'Codon_Resistente_03',
+       'Codon_Resistente_04', 'Codon_Resistente_05', 'Codon_Resistente_06',
+       'Codon_Resistente_07', 'Codon_Resistente_08', 'Codon_Resistente_09',
+       'Codon_Resistente_10', 'Codon_Resistente_11', 'Codon_Resistente_12']
