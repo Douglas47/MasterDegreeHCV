@@ -32,7 +32,7 @@ drugs_3letters = {
 
 """ CODON USAGE """
 
-codon_usage_table = pd.read_csv("../Data/Codon_Usage.csv", delimiter = ";")
+codon_usage_table = pd.read_csv("../Dados/Codon_Usage.csv", delimiter = ";")
 codon_usage_g1 = dict(zip(list(codon_usage_table['Codon']), list(codon_usage_table['HCV-G1'])))
 codon_usage_g3 = dict(zip(list(codon_usage_table['Codon']), list(codon_usage_table['HCV-G3'])))
 
@@ -61,7 +61,7 @@ codontable = {
 
 """ POSITION LIST """
 
-positions_list = (24,28,29,30,31,32,54,58,92,93) 
+positions_list = (24,28,30,31,32,54,58,92,93) 
 
 """ Nucleotide Nitrogen Base Group """
 
