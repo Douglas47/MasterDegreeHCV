@@ -46,7 +46,7 @@ def genetic_barrier(codon_1,codon_2):
             position += 1
         return valor
     except:
-        return 0
+        return -1
      
     
 """ This function prints in a more organized way the informations about the sequences """
